@@ -1,0 +1,60 @@
+.machines-list {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.machine-item {
+  position: relative;
+  width: calc(100% / 5 + 15px);
+  margin: 15px 0;
+  padding: 15px 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+.machine-item:hover {
+  cursor: pointer;
+}
+
+.machine-info-min-warning {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.machine-info-min-model {
+  font-weight: bold;
+  padding: 0 15px;
+}
+
+.machine-info-min-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 5px 0 5px;
+}
+
+.machine-info-min-indicators-item {
+  display: flex;
+  width: calc(100% / 2 - 20px);
+  margin: 5px 10px 0 10px;
+}
+
+.machine-info-min-indicators-item svg {
+  filter: grayscale(1);
+}
+
+.machine-info-min-indicators-item span {
+  width: 100%;
+  font-size: 12px !important;
+  text-align: right;
+}
+
+.machine-item:hover .machine-info-min-indicators-item svg,
+.machine-item-active .machine-info-min-indicators-item svg {
+  filter: grayscale(0);
+}
